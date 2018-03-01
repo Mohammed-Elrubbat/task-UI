@@ -1,0 +1,42 @@
+
+
+
+cout << "Enter your choice\n";
+	cout << "----------------------------------------------------------------------------------------\n";
+	cout << "A) From Decimal to Binary   B)From Decimal to Octa   C) From Decimal to Hexa-Decimal\n";
+	cout << "D) From Binary to Decimal   E) From Binary to Octa    F) From Binary to Hexa-Decimal\n";
+	cout << "G) From Octa to Decimal     I) From Octa to Binary    J) From Octa to Hexa-Decimal\n";
+	cout << "K) From Hexa to Decimal     L) From Hexa to Binary    M) From Hexa to Octal\n ";
+	cout << "---------------------------------------------------------------------------------------\n";
+	char A, C, D, E, F, G, I, J, K, L, M;
+	int p;
+	cin >> p;
+	switch (p)
+	{
+	case 'A':
+		int x;
+		cout << "Enter the integer number";
+		cin >> x;
+		string binary = bitset<8>(x).to_string();
+		cout << binary << "\n";
+		unsigned long decimal = bitset<8>(binary).to_ulong();
+		cout << decimal << "\n";
+		break;
+	case 'B':
+		cout << "up";
+		break;
+	default:
+		cout << "defolt case";
+		
+	}
+
+
+
+
+
+
+    return 0;
+}
+
+
+
